@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.container{
+    position: relative;
+    width:100%;
+    max-width: 1000px;
+    min-height:1000px;
+    background: #fff;
+    margin:50px;
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    
+}
+.container .left_side{
+    position: relative;
+    background-color: rgb(44, 42, 42);
+    padding:40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    
+}
+.profileText .imgBx{
+    width:180px;
+    height:210px;
+    border-radius:50%;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.profileText h2{
+    color:#fff;
+    font-size: 1.3em;
+    margin-top:20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText span{
+    font-weight: 300;
+    font-size:1.2em;
+    color:whitesmoke;
+}
+.container .right_side{
+    position: relative;
+    background-color: #fff;
+    padding:40px;
+}
+.title{
+    margin-top:35px;
+    color:#fff;
+    padding:5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.contactInfo ul{
+  position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    margin: 10px 0;
+   list-style: none;
+    display: flex;
+    cursor: pointer;   
+}
+.contactInfo ul li .icons{
+  display: inline-block;
+  width:30px;
+  font-size: 18px;
+  padding-left:2.5px;
+  color:#03a9f4;
+}
+.contactInfo ul li .icons1{
+    display: inline-block;
+    width:35px;
+    font-size: 18px;
+    padding-left:2.5px;
+    color:#03a9f4;
+  }
+.contactInfo ul li .text{
+    color:#fff;
+margin-left: 5px;
+}
+.education .title{
+   margin-bottom: 5px;
+   display: flex;
+   flex-direction: column;
+}
+.education ul{
+    margin-top: 15px;
+}
+
+.education ul h5{
+    margin:5px;
+    color: #03a9f4;
+    text-transform: uppercase;
+}
+.education ul h4{
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.education  .college{
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 200;
+    /* text-transform: none; */
+}
+
+.Profile .ProfileInfo  h1{
+    margin:25px 0 10px 0;
+    text-transform: uppercase;
+    color: rgb(44, 42, 42);
+    letter-spacing: 0.8px;
+}
+.Profile .ProfileInfo #MyProject{
+    margin-top: 30px;
+    letter-spacing: 0.8px;
+}
+.Profile .ProfileInfo p{
+    line-height: 25px;
+    text-align: justify;
+}
+.Profile .ProfileInfo ul{
+    line-height: 30px;
+}
+.Profile .ProfileInfo .box{
+    position: relative;
+    Width:100%;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    justify-content: center;
+    align-items: center;
+    margin:10px 0;
+}
+.Profile .ProfileInfo .Skills .box .name{
+    /* color:#848c99; */
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.Skills #MyProject{
+margin-bottom: 20px;
+}
+.Skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color:#f0f0f0;
+}
+.Skills .box .percent div{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background-color: rgb(78, 75, 75);
+}
+.Profile .ProfileInfo .languages ul{
+    margin-top: 12px;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    font-size: 200;
+}
+.Hobbies ul{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+@media (max-width:960px){
+    .container{
+        margin:10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Profile .ProfileInfo .languages ul{     
+         grid-template-columns: repeat(1,1fr);
+    } 
+    .Profile .ProfileInfo .Hobbies ul{     
+        grid-template-columns: repeat(1,1fr);
+   } 
+}
+@media (max-width:400px){
+    .container .left_side{
+        /* margin:5px; */
+        padding:6px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .education ul{
+        margin: 10px;
+    }
+}
